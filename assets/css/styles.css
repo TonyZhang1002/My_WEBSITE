@@ -674,6 +674,7 @@ footer.entry-meta .meta-in {
 #comments {
   font-size: 13px;
   font-size: 0.8125rem;
+  margin-bottom: 10px;
 }
 #comments .comments-title {
   margin: 0 0 5px 0;
@@ -769,7 +770,7 @@ footer.entry-meta .meta-in {
 **********************************************************************/
 #footer {
   background: #232323;
-  padding: 30px 0 0 0;
+  padding: 30px 0 30px 0;
   font-size: 12px;
   color: #999;
 }
