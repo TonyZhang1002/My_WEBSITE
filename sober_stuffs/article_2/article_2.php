@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-112684079-1"></script>
+	<script>
+  		window.dataLayer = window.dataLayer || [];
+  		function gtag(){dataLayer.push(arguments);}
+  		gtag('js', new Date());
+
+  		gtag('config', 'UA-112684079-1');
+	</script>
+	
 	<meta charset="utf-8">
 	<meta name="viewport"    content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">
@@ -50,7 +60,7 @@
 				
 				<ul class="nav navbar-nav">
 					<li class="active"><a href="../../index.html">home</a></li>
-					<li><a href="../../strange_stuffs/strange_main.html">articles</a></li>
+					<li><a href="http://blog.zhangqinyuan.xyz" target="_blank">blogs</a></li>
 					<li><a href="../../sober_stuffs/sober_main.html">works</a></li>
 					<li><a href="../../about.html">about me</a></li>
 				</ul>
