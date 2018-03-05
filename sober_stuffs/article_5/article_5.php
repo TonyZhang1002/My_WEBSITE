@@ -80,25 +80,22 @@
  				<article class="post">
 					<header class="entry-header">
  						<div class="entry-meta"> 
- 							<span class="posted-on"><time class="entry-date published" date="2018-01-08">January 08, 2018</time></span>			
+ 							<span class="posted-on"><time class="entry-date published" date="2018-02-10">February 10, 2018</time></span>			
  						</div> 
- 						<h1 class="entry-title"><a href="article_2.php" rel="bookmark">OpenGL - 过马路小游戏</a></h1>
+ 						<h1 class="entry-title"><a href="article_5.php" rel="bookmark">一个为Wallpaper Engine设计的小游戏</a></h1>
 					</header> 
 					<div class="entry-content"> 
-						<p><img alt="" src="../../assets/images/project_1_img_1.jpg"></p>
+						<p><img alt="" src="../../assets/images/project_4_img_1.jpg"></p>
 						<p>
-							这是上个学期图形学的一门大作业，写了半天就写出了个过马路的简单小游戏，总体来讲用java写OpenGL感觉很不舒服，不停的复制粘贴，不停的改数据调参数，累死累活效果还差，但是好处是里面每一个元素都是自己弄过的代码哦，感觉还是有点小成就感的呢！
+							这是我一个用Unity3D写的小游戏，玩法简单，就是点击屏幕创造小黑洞，让宠物兔子绕着黑洞转。灵感来源于17年夏天国外比较流行的meme神曲Shooting Stars。
 						</p>
+						<p><img alt="" src="../../assets/images/project_4_img_2.jpg"></p>
 						<p>
-							作死的是，我中途觉得IDEA很帅啊，然后就从eclipse换去了IDEA写，结果很智障的搞出了一大堆问题，然后老师估计还要拿eclipse改，我的内心真的毫不紧张呢，请看这诡异的文件结构：
+							然后我放在了Wallpaper这个软件的Steam创意工坊里，目前一共有超过160个Sub，3个favourite和2个Positive rating了。
 						</p>
-						<p><img alt="" src="../../assets/images/project_1_img_2.png"></p>
-						<p>
-							又有.idea 又有.classpath 又有.iml 还有什么.eml<br>emmmmmmmm.......<br>那我能怎么办呢，起码还能在eclipse里跑咯。但更蛋疼的是，全部弄完之后发觉尼玛文件大小太大，上传不进教务系统...只能Github了，啊。
-						</p>
-						<h3>什么时候我这手才能不作死哦，摔</h3>
-						<p><img alt="" src="../../assets/images/project_1_img_3.jpg"></p>
-						<a href="https://github.com/TonyZhang1002/CrossTheRoad_openGL/tree/master/Assignment4">Github Link</a>
+						<p>在Wallpaper这个软件里，订阅之后就可以使用我这个软件做为壁纸，还可以在右下角调整声音大小哦。</p>
+						<a href="https://github.com/TonyZhang1002/Attraction-Unity-Test-2017_Summer_Project"  target="_blank">Github Link</a><br>
+						<a href="http://steamcommunity.com/sharedfiles/filedetails/?id=1097116691"  target="_blank">Steam Workshop Link</a>
 					</div> 
 				</article><!-- #post-## -->
 
@@ -117,7 +114,7 @@
 	$username = "root";
 	$password = "Www13826568574co";
 	$dbname = "TonyZhang";
-	$articleID = 2;
+	$articleID = 5;
 	try {
     	$conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
     	$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -157,7 +154,7 @@
 
 					<div id="respond">
 						<h3 id="reply-title">Leave a Reply</h3>
-						<form action="add-comments_2.php" method="post" id="comment-form" class="">
+						<form action="add-comments_5.php" method="post" id="comment-form" class="">
 							<div class="form-group">
 								<label for="inputName">Name</label>
 								<input type="text" class="form-control" id="inputName" name="inputName" placeholder="Enter your name">

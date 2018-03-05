@@ -80,25 +80,23 @@
  				<article class="post">
 					<header class="entry-header">
  						<div class="entry-meta"> 
- 							<span class="posted-on"><time class="entry-date published" date="2018-01-08">January 08, 2018</time></span>			
+ 							<span class="posted-on"><time class="entry-date published" date="2018-02-09">February 09, 2018</time></span>			
  						</div> 
- 						<h1 class="entry-title"><a href="article_2.php" rel="bookmark">OpenGL - 过马路小游戏</a></h1>
+ 						<h1 class="entry-title"><a href="article_4.php" rel="bookmark">Instagram of China - PicFun</a></h1>
 					</header> 
 					<div class="entry-content"> 
-						<p><img alt="" src="../../assets/images/project_1_img_1.jpg"></p>
+						<p><img alt="" src="../../assets/images/project_3_img_1.jpg"></p>
 						<p>
-							这是上个学期图形学的一门大作业，写了半天就写出了个过马路的简单小游戏，总体来讲用java写OpenGL感觉很不舒服，不停的复制粘贴，不停的改数据调参数，累死累活效果还差，但是好处是里面每一个元素都是自己弄过的代码哦，感觉还是有点小成就感的呢！
+							这是我写的一个图片分享app，only for Android。有点像Ins吧，也有点类似imgur，然后就国内没什么优秀的图片分享app，然后大作业的时候就想着写个这个。
 						</p>
+						<p><img alt="" src="../../assets/images/project_3_img_4.jpg"></p>
 						<p>
-							作死的是，我中途觉得IDEA很帅啊，然后就从eclipse换去了IDEA写，结果很智障的搞出了一大堆问题，然后老师估计还要拿eclipse改，我的内心真的毫不紧张呢，请看这诡异的文件结构：
+							只写了从媒体库中选照片的功能，打开摄像头比较麻烦，时间不多就没写。图片上传是通过FTP的方式上传到VPS上。
 						</p>
-						<p><img alt="" src="../../assets/images/project_1_img_2.png"></p>
-						<p>
-							又有.idea 又有.classpath 又有.iml 还有什么.eml<br>emmmmmmmm.......<br>那我能怎么办呢，起码还能在eclipse里跑咯。但更蛋疼的是，全部弄完之后发觉尼玛文件大小太大，上传不进教务系统...只能Github了，啊。
-						</p>
-						<h3>什么时候我这手才能不作死哦，摔</h3>
-						<p><img alt="" src="../../assets/images/project_1_img_3.jpg"></p>
-						<a href="https://github.com/TonyZhang1002/CrossTheRoad_openGL/tree/master/Assignment4">Github Link</a>
+						<p><img alt="" src="../../assets/images/project_3_img_2.jpg"></p>
+						<p>最大的问题在于数据库的管理，我一开始是打算使用VPS中的mySQL的，但是一直无法连接，原因不明。最后只能用读写文件的方式做个假的数据库来实现图片评论的同步功能。</p>
+						<p>总体来讲这个app很简陋，也很不安全，但是总体来讲有个轮廓吧嗯！</p>
+						<a href="https://github.com/TonyZhang1002/PicFUN"  target="_blank">Github Link</a>
 					</div> 
 				</article><!-- #post-## -->
 
@@ -117,7 +115,7 @@
 	$username = "root";
 	$password = "Www13826568574co";
 	$dbname = "TonyZhang";
-	$articleID = 2;
+	$articleID = 4;
 	try {
     	$conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
     	$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -157,7 +155,7 @@
 
 					<div id="respond">
 						<h3 id="reply-title">Leave a Reply</h3>
-						<form action="add-comments_2.php" method="post" id="comment-form" class="">
+						<form action="add-comments_4.php" method="post" id="comment-form" class="">
 							<div class="form-group">
 								<label for="inputName">Name</label>
 								<input type="text" class="form-control" id="inputName" name="inputName" placeholder="Enter your name">

@@ -80,25 +80,22 @@
  				<article class="post">
 					<header class="entry-header">
  						<div class="entry-meta"> 
- 							<span class="posted-on"><time class="entry-date published" date="2018-01-08">January 08, 2018</time></span>			
+ 							<span class="posted-on"><time class="entry-date published" date="2018-01-30">January 30, 2018</time></span>			
  						</div> 
- 						<h1 class="entry-title"><a href="article_2.php" rel="bookmark">OpenGL - 过马路小游戏</a></h1>
+ 						<h1 class="entry-title"><a href="article_3.php" rel="bookmark">BJUT一键登录插件</a></h1>
 					</header> 
 					<div class="entry-content"> 
-						<p><img alt="" src="../../assets/images/project_1_img_1.jpg"></p>
+						<p><img alt="" src="../../assets/images/project_2_img_1.jpg"></p>
 						<p>
-							这是上个学期图形学的一门大作业，写了半天就写出了个过马路的简单小游戏，总体来讲用java写OpenGL感觉很不舒服，不停的复制粘贴，不停的改数据调参数，累死累活效果还差，但是好处是里面每一个元素都是自己弄过的代码哦，感觉还是有点小成就感的呢！
+							这是很早前写的一个北京工业大学校园网一键登录插件，个人是用在chrome上，然后日常的flow就是开机，然后打开chrome，然后就点击插件完成ipv4&amp;ipv6双栈登录。
 						</p>
 						<p>
-							作死的是，我中途觉得IDEA很帅啊，然后就从eclipse换去了IDEA写，结果很智障的搞出了一大堆问题，然后老师估计还要拿eclipse改，我的内心真的毫不紧张呢，请看这诡异的文件结构：
+							这里需要做的就是，下载这个文件夹，然后修改contentscripts.js里面的.val后的值。第一行是账号，第二行是密码。
 						</p>
-						<p><img alt="" src="../../assets/images/project_1_img_2.png"></p>
-						<p>
-							又有.idea 又有.classpath 又有.iml 还有什么.eml<br>emmmmmmmm.......<br>那我能怎么办呢，起码还能在eclipse里跑咯。但更蛋疼的是，全部弄完之后发觉尼玛文件大小太大，上传不进教务系统...只能Github了，啊。
-						</p>
-						<h3>什么时候我这手才能不作死哦，摔</h3>
-						<p><img alt="" src="../../assets/images/project_1_img_3.jpg"></p>
-						<a href="https://github.com/TonyZhang1002/CrossTheRoad_openGL/tree/master/Assignment4">Github Link</a>
+						<p><img alt="" src="../../assets/images/project_2_img_2.jpg"></p>
+						<p>注意第三行这里我选择了双栈登录，需要ipv4单独登录的需要修改这里的xpath，然后也很简单的。</p>
+						<p>然后整体体验也不错，用起来很舒服，不用每天都打开网关登陆了！然后有类似需求的可以照着我的修改修改这样。</p>
+						<a href="https://github.com/TonyZhang1002/BJUT-OneClickLogin"  target="_blank">Github Link</a>
 					</div> 
 				</article><!-- #post-## -->
 
@@ -117,7 +114,7 @@
 	$username = "root";
 	$password = "Www13826568574co";
 	$dbname = "TonyZhang";
-	$articleID = 2;
+	$articleID = 3;
 	try {
     	$conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
     	$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -157,7 +154,7 @@
 
 					<div id="respond">
 						<h3 id="reply-title">Leave a Reply</h3>
-						<form action="add-comments_2.php" method="post" id="comment-form" class="">
+						<form action="add-comments_3.php" method="post" id="comment-form" class="">
 							<div class="form-group">
 								<label for="inputName">Name</label>
 								<input type="text" class="form-control" id="inputName" name="inputName" placeholder="Enter your name">
